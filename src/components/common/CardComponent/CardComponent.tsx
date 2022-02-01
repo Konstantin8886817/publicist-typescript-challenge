@@ -1,7 +1,7 @@
 import React from 'react';
 import { Wrapper, CardStyle, ContentStyle } from '../../../theme';
 
-const Cards: React.FunctionComponent = (props) => {
+const CardComponent: React.FunctionComponent = (props) => {
   return (
     <Wrapper>
       <CardStyle>
@@ -11,4 +11,4 @@ const Cards: React.FunctionComponent = (props) => {
   );
 };
 
-export default Cards;
+export default CardComponent;
