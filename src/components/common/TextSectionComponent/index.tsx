@@ -1,19 +1,16 @@
-import React from 'react';
-
-import { default as Content } from '../content.json';
+import { default as Content } from '../../../mocks/content.json';
 import { ErrorBoundary } from './ErrorBoundary';
+import { NodeType } from '../../../utils/types';
+import NodeComponent from '../NodeComponent';
 
 interface Props {
     id: string;
 }
 
 function Root(props: any) {
-    return (
-        <div>
-            <p>Content ID: <code>{props.id}</code></p>
-            <pre>{JSON.stringify(props.nodes, null, 2) }</pre>
-        </div>
-    );
+    return props.nodes.map((node: NodeType, index: number) => {
+        return <NodeComponent node={node} key={index} />;
+    });
 }
 
 export function TextSection({ id }: Props) {

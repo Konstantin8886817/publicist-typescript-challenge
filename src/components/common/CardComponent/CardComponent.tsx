@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Cards: React.FunctionComponent = (props) => {
-    return (
+  return (
+    <div>
       <div>
-        <div>
-          <div>{props.children}</div>
-        </div>
+        <div>{props.children}</div>
       </div>
-    );
-  };
-  
-  export default Cards;
+    </div>
+  );
+};
+
+export default Cards;
