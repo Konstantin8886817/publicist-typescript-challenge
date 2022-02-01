@@ -1,6 +1,6 @@
-import React from 'react';
-
-import { TextSection } from './components/TextSection';
+import React, {useState, useEffect} from 'react';
+import { TextSection } from '../common/TextSection';
+import CardComponent from '../common/CardComponent';
 
 function App() {
     return (
