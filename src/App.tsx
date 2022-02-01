@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TextSection } from './TextSection';
+import { TextSection } from './components/TextSection';
 
 function App() {
     return (
